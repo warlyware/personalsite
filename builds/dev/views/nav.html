@@ -1,0 +1,41 @@
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-background">
+	<div class="container">
+		<!-- Navbar header -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- Navbar-brand -->
+			<a class="navbar-brand" ng-click="minJumbotron('home')" id="home">Dan Ward</a>
+		</div>
+		
+		<!-- Navbar-right -->
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a ng-click="minJumbotron('about-me')" id="about-me">About Me</a></li>
+
+				<!-- Copy-editing dropdown -->
+				<li class="dropdown">						
+					<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copy-Editing <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">		
+						<li><a ui-sref="paper1">EMBO Journal, Volume 34, Issue 6 (3/15)</a></li>
+						<li><a ui-sref="paper2">Trends in Molecular Medicine, Volume 21, Issue 3 (3/15)</a></li>
+						<li><a ui-sref="paper3">PLOS ONE Research Article (6/14)</a></li>								
+					</ul>
+				</li>
+
+				<!-- Email dropdown -->
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-envelope"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="mailto:danward@gmail.com">danward@gmail.com</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</nav>

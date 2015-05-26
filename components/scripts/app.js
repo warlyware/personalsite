@@ -17,7 +17,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 		controller: 'HomeCtrl',
 		templateUrl: 'views/home.html'
 	})
-    .state('bio', {
+    .state('about-me', {
 		url: '/bio',
 		controller: 'HomeCtrl',
 		templateUrl: 'views/bio.html'

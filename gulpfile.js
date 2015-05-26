@@ -115,11 +115,11 @@ gulp.task('connect', function() {
 	connect.server({
 		port: '3000',
 		root: outputDir,
-		host: '0.0.0.0',
-// 		host: 'localhost',
+		// host: '0.0.0.0',
+		host: 'localhost',
 		livereload: {
 // 			enabled: true,
-			port: '80'			
+			port: '4002'			
 		}
 	});
 });
